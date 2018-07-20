@@ -1,0 +1,36 @@
+# cache files for sublime text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# workspace files are user-specific
+*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+*.sublime-project
+
+# VIM
+.*.swo
+.*.swp
+tags
+# NetBeans
+nbproject
+# CVS
+CVS
+.cvsignore
+# TextMate
+.#*
+# PHP Storm, other java IDE's
+.idea
+# OS X
+.DS_Store
+._*
+# Windows
+Thumbs.db
+# VS Code
+.vscode
+
+elements/**/node_modules
+node_modules
+npm-debug.log

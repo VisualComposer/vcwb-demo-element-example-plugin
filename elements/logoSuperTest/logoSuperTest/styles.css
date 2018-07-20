@@ -1,0 +1,28 @@
+.vce-logo-widget {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.vce-logo-widget--align-left {
+  text-align: left;
+}
+.vce-logo-widget--align-center {
+  text-align: center;
+}
+.vce-logo-widget--align-right {
+  text-align: right;
+}
+.vce-logo-widget .custom-logo-link {
+  padding-right: 0;
+  box-shadow: none;
+}
+.vce-logo-widget .custom-logo-link img {
+  box-shadow: none;
+}
+.vce-logo-widget img {
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  height: auto;
+}

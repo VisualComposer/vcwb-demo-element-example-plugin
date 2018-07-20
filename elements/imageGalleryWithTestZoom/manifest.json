@@ -1,0 +1,19 @@
+{
+  "elements": {
+    "imageGalleryWithTestZoom": {
+      "settings": {
+        "name": "Image Gallery With Test Zoom",
+        "metaThumbnailUrl": "[publicPath]/image-gallery-with-zoom-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/image-gallery-with-zoom-preview.png",
+        "metaDescription": "A grid type image gallery with a test zoom effect upon hover to catch visitors' attention."
+      }
+    }
+  },
+  "categories": {
+    "Image gallery": {
+      "elements": [
+        "imageGalleryWithTestZoom"
+      ]
+    }
+  }
+}

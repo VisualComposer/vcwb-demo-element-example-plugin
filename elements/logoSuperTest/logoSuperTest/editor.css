@@ -1,0 +1,8 @@
+.vce-logo-widget {
+  min-height: 1em;
+}
+
+.vce-logo-widget vcvhelper, .vce-logo-widget .vcvhelper {
+  height: 100%;
+  border: 1px dotted #aaa;
+}
