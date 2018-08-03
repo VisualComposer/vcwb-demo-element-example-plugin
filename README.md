@@ -1,37 +1,39 @@
 # VCWB Elements API
 
 
-## What is element
-Element is the independent part of the system which represents html based block with ability to output media and dynamic content.
+## What is an element?
+An element is the independent part of the system which represents HTML based block with the ability to output media and dynamic content.
 
 ## How does it work?
-The editor works with elements as React components. Thess components must be built with webpack and enqueued by API.
-Every element has preview, thumbnail, category and React-based component.
+The editor works with elements as React components. These components must be built with webpack and enqueued by API.
+Every element has a preview image, thumbnail image, category and React-based component.
 
-### Element containment 
+### Element containment
 
-Elements contains
-- manifest.json - describes element data, preview, thumbnail, category and php files.
+Element contains
+- manifest.json - describes element data, preview image, thumbnail image, category and PHP files
 - package.json - npm install/update files for required node modules
-- webpack.config files to build component with Webpack
+- webpack.config files to build a component with webpack
 
-Directory {tag} (must be renamed to src):
-- index.js - main file, build with Webpack
-- component.js - ReactJs component contains VCWB editor component. This component is used only in editor.
+Directory {tag} (must be renamed to the element tag name):
+- cssMixins directory – cssMixin.pcss: POSTCSS file that holds mixin for custom generated style
+- public directory – may contain custom CSS, JS, and images for public view
+- index.js - the main file, build with webpack
+- component.js - ReactJs component contains VCWB editor component. This component is used only in the editor
 - settings.json - Describes element attributes
-- *.php files - Required php files(must be described in ../manifest.json)
-- editor.css - css files which will be used only in editor
-- style.css - css files which will be used on frontend to display content.
+- *.php files - Required PHP files(must be described in ../manifest.json)
+- editor.css - CSS file which will be used only in the editor
+- style.css - CSS file which will be used on the frontend to display content
 
 ### Requirements
 - node > 8.0, recommended latest
 - PHP > 5.4, recommended latest (7.2)
 
 ## Installation
-- To work with element, each element is independent
-- Run `npm install` in element directory
+- To work with an element, each element is independent
+- Run `npm install` in the element directory
 - Build via `npm run build`
-- Once element is built it will appear in editor
+- Once an element is built it will appear in the editor
 
 ### Commands
 ```
@@ -42,4 +44,3 @@ npm run build-production // Builds the minified build
 npx webpack --config=webpack.config.4x.babel.js // Same as npm run build
 npx webpack --config=webpack.config.4x.babel.produciton.js -p // Same as npm run build-production
 ```
-
