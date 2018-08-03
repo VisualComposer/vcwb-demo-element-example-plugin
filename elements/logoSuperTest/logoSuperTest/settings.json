@@ -78,24 +78,6 @@
       "General"
     ]
   },
-  "assetsLibrary": {
-    "access": "public",
-    "type": "string",
-    "value": [
-      "animate"
-    ]
-  },
-  "metaBackendLabels": {
-    "type": "group",
-    "access": "protected",
-    "value": [
-      {
-        "value": [
-          "size"
-        ]
-      }
-    ]
-  },
   "metaCustomId": {
     "type": "customId",
     "access": "public",
