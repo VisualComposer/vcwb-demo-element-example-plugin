@@ -22,6 +22,5 @@ vcvAddElement(
         'mixin': require('raw-loader!./cssMixins/imageGalleryGap.pcss')
       }
     }
-  },
-  ''
+  }
 )

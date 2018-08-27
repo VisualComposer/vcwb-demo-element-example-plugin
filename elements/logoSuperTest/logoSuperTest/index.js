@@ -15,6 +15,5 @@ vcvAddElement(
     'css': require('raw-loader!./styles.css'),
     'editorCss': require('raw-loader!./editor.css'),
     'mixins': {}
-  },
-  ''
+  }
 )
