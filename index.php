@@ -1,11 +1,11 @@
 <?php
 /**
-    Plugin Name: VCWB Elements API example
-    Plugin URI: http://wpbakery.com
-    Description: VCWB Elements API example
-    Version: 1.0
-    Author: VV - WPBakery.com
-    Author URI: http://wpbakery.com
+Plugin Name: VCWB Elements API example
+Plugin URI: http://visualcomposer.com
+Description: VCWB Elements API example
+Version: 1.0
+Author: Visual Composer
+Author URI: http://visualcomposer.com
 */
 
 // don't load directly
