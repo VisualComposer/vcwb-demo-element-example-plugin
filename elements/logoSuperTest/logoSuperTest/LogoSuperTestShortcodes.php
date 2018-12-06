@@ -22,10 +22,10 @@ class LogoSuperTestShortcodes extends Container implements Module
 
     public function __construct()
     {
-        if (!defined('VCV_LOGO_WIDGET_SHORTCODE')) {
+        if (!defined('VCV_LOGO_SUPER_TEST_WIDGET_SHORTCODE')) {
             $this->addEvent('vcv:inited', 'registerShortcode');
             $this->addFilter('vcv:editor:variables vcv:editor:variables/logoSuperTest', 'getVariables');
-            define('VCV_LOGO_WIDGET_SHORTCODE', true);
+            define('VCV_LOGO_SUPER_TEST_WIDGET_SHORTCODE', true);
         }
     }
 
