@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 const vcvAPI = vcCake.getService('api')
 
-export default class imageGalleryWithTestZoom extends vcvAPI.elementComponent {
+export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
   imageSources = []
   imageOrder = {}
 
