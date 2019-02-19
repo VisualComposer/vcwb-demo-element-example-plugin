@@ -28,7 +28,6 @@
     "access": "protected",
     "value": [
       "output",
-      "outputInline",
       "metaCustomId",
       "customClass"
     ],
