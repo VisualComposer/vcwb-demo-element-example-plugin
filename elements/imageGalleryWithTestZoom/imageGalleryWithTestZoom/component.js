@@ -1,8 +1,8 @@
 import React from 'react'
-import vcCake from 'vc-cake'
+import { getService } from 'vc-cake'
 import classNames from 'classnames'
 
-const vcvAPI = vcCake.getService('api')
+const vcvAPI = getService('api')
 
 export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
   imageSources = []
@@ -116,8 +116,8 @@ export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
   }
 
   render () {
-    let {id, atts, editor} = this.props
-    let {image, shape, clickableOptions, showCaption, zoomEffect, customClass, metaCustomId} = atts
+    const {id, atts, editor} = this.props
+    const {image, shape, clickableOptions, showCaption, zoomEffect, customClass, metaCustomId} = atts
     let containerClasses = [ 'vce-image-gallery-with-zoom' ]
     let wrapperClasses = [ 'vce', 'vce-image-gallery-with-zoom-wrapper' ]
     let containerProps = {}
@@ -224,7 +224,7 @@ export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
       )
     })
 
-    let doAll = this.applyDO('all')
+    const doAll = this.applyDO('all')
     containerClasses = classNames(containerClasses)
     wrapperClasses = classNames(wrapperClasses)
 
