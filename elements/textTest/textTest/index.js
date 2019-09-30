@@ -1,7 +1,7 @@
-import vcCake from 'vc-cake'
+import { getService } from 'vc-cake'
 import TextTestElement from './component'
 
-const vcvAddElement = vcCake.getService('cook').add
+const vcvAddElement = getService('cook').add
 
 vcvAddElement(
   require('./settings.json'),

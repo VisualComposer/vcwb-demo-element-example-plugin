@@ -1,8 +1,8 @@
 /* eslint-disable import/no-webpack-loader-syntax */
-import vcCake from 'vc-cake'
+import { getService } from 'vc-cake'
 import LogoSuperTest from './component'
 
-const vcvAddElement = vcCake.getService('cook').add
+const vcvAddElement = getService('cook').add
 
 vcvAddElement(
   require('./settings.json'),

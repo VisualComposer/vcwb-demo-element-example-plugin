@@ -1,8 +1,8 @@
 import React from 'react'
-import vcCake from 'vc-cake'
+import { getService } from 'vc-cake'
 import classNames from 'classnames'
 
-const vcvAPI = vcCake.getService('api')
+const vcvAPI = getService('api')
 
 export default class LogoSuperTest extends vcvAPI.elementComponent {
   constructor (props) {
@@ -19,8 +19,8 @@ export default class LogoSuperTest extends vcvAPI.elementComponent {
   }
 
   render () {
-    let { id, atts, editor } = this.props
-    let { size, alignment, customClass, metaCustomId } = atts
+    const { id, atts, editor } = this.props
+    const { size, alignment, customClass, metaCustomId } = atts
     let containerClasses = []
     let elementClasses = [ 'vce', 'vce-logo-widget' ]
     let containerStyle = {}
@@ -61,7 +61,7 @@ export default class LogoSuperTest extends vcvAPI.elementComponent {
       customProps.id = metaCustomId
     }
 
-    let doAll = this.applyDO('all')
+    const doAll = this.applyDO('all')
 
     return (
       <div {...editor} id={`el-${id}`} className={containerClasses}>
