@@ -1,3 +1,4 @@
+/* eslint-disable import/no-webpack-loader-syntax */
 import { getService } from 'vc-cake'
 import TextTestElement from './component'
 

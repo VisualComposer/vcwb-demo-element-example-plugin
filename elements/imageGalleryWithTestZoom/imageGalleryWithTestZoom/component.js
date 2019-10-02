@@ -41,9 +41,9 @@ export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
     let imgArr = []
     image.forEach((img) => {
       if (image && image.id) {
-        imgArr.push({imgSrc: this.getImageUrl(img)})
+        imgArr.push({ imgSrc: this.getImageUrl(img) })
       } else {
-        imgArr.push({imgSrc: this.getImageUrl(img)})
+        imgArr.push({ imgSrc: this.getImageUrl(img) })
       }
     })
     this.setImgSrcState(imgArr)
@@ -112,12 +112,12 @@ export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
   }
 
   setImgSrcState (imgSrc) {
-    this.setState({imgSrc})
+    this.setState({ imgSrc })
   }
 
   render () {
-    const {id, atts, editor} = this.props
-    const {image, shape, clickableOptions, showCaption, zoomEffect, customClass, metaCustomId} = atts
+    const { id, atts, editor } = this.props
+    const { image, shape, clickableOptions, showCaption, zoomEffect, customClass, metaCustomId } = atts
     let containerClasses = [ 'vce-image-gallery-with-zoom' ]
     let wrapperClasses = [ 'vce', 'vce-image-gallery-with-zoom-wrapper' ]
     let containerProps = {}
@@ -172,7 +172,7 @@ export default class ImageGalleryWithTestZoom extends vcvAPI.elementComponent {
 
       if (clickableOptions === 'url' && image[index].link && image[index].link.url) {
         CustomTag = 'a'
-        let {url, title, targetBlank, relNofollow} = image[index].link
+        let { url, title, targetBlank, relNofollow } = image[index].link
         customProps = {
           'href': url,
           'title': title,
