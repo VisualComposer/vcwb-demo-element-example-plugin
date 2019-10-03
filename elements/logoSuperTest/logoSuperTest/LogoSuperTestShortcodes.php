@@ -63,12 +63,12 @@ class LogoSuperTestShortcodes extends Container implements Module
         if (has_custom_logo()) {
             if (isset($atts) && isset($atts['size'])) {
                 $this->sizes = explode('x', $atts['size']);
-                $this->custom_logo_id = get_theme_mod('custom_logo');
+                $this->customLogoId = get_theme_mod('custom_logo');
                 if (intval($this->sizes[0]) && intval($this->sizes[1])) {
                     $this->wpAddFilter(
                         'wp_get_attachment_image_src',
-                        function ($image, $attachment_id, $size, $icon) {
-                            if ($attachment_id === $this->custom_logo_id) {
+                        function ($image, $attachmentId, $size, $icon) {
+                            if ($attachmentId === $this->customLogoId) {
                                 $image[1] = intval($this->sizes[0]);
                                 $image[2] = intval($this->sizes[1]);
                             }
@@ -79,7 +79,7 @@ class LogoSuperTestShortcodes extends Container implements Module
                     $this->wpAddFilter(
                         'wp_get_attachment_image_attributes',
                         function ($attr, $attachment, $size) {
-                            if ($attachment->ID === $this->custom_logo_id) {
+                            if ($attachment->ID === $this->customLogoId) {
                                 $attr['width'] = $this->sizes[0];
                                 $attr['height'] = $this->sizes[1];
                                 $attr['sizes'] = '(max-width: ' . $this->sizes[0] . 'px) 100vw, ' . $this->sizes[0]

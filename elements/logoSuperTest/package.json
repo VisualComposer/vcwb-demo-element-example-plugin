@@ -1,11 +1,11 @@
 {
   "name": "vcwb",
-  "version": "dev",
-  "description": "Visual Composer Website Builder",
+  "version": "1.0.0-dev",
+  "description": "Logo Super Test",
   "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Visualcomposer/builder.git"
+    "url": "git@github.com:Visualcomposer/vcwb-demo-element-example-plugin.git"
   },
   "author": "@visualcomposer",
   "license": "GPL-2.0+",

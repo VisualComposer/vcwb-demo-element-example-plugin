@@ -27,10 +27,10 @@ export default class LogoSuperTest extends vcvAPI.elementComponent {
     let customProps = {}
 
     const Sizes = window.vcvImageSizes ? window.vcvImageSizes : {
-        thumbnail: { width: 150 },
-        medium: { width: 300 },
-        large: { width: 1024 }
-      }
+      humbnail: { width: 150 },
+      medium: { width: 300 },
+      large: { width: 1024 }
+    }
 
     if (Sizes[ size ] && Sizes[ size ].width) {
       containerStyle.width = `${Sizes[ size ].width}px`
