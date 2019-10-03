@@ -1,3 +1,4 @@
+/* eslint-disable */
 (function () {
   var openedPhotoswipe;
   window.vcv.on('ready', function () {
@@ -162,3 +163,4 @@
     }
   })
 })()
+/* eslint-enable */

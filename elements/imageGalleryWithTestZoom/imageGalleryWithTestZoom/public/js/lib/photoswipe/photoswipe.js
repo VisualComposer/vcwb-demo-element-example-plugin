@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*! PhotoSwipe - v4.1.2 - 2017-04-05
 * http://photoswipe.com
 * Copyright (c) 2017 Dmitry Semenov; */
@@ -3635,3 +3636,4 @@
   };
   return PhotoSwipe;
 });
+/* eslint-enable */
