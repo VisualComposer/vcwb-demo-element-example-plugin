@@ -1,0 +1,195 @@
+{
+  "tag": {
+    "access": "protected",
+    "type": "string",
+    "value": "verticalChart"
+  },
+  "relatedTo": {
+    "type": "group",
+    "access": "protected",
+    "value": [
+      "General"
+    ]
+  },
+  "thickness": {
+    "type": "number",
+    "access": "public",
+    "value": "20",
+    "options": {
+      "label": "Thickness",
+      "description": "Enter chart bar thickness in pixels.",
+      "cssMixin": {
+        "mixin": "barThickness",
+        "property": "thickness",
+        "namePattern": "[\\da-f]+"
+      },
+      "min": 1
+    }
+  },
+  "toggleValue": {
+    "type": "toggle",
+    "access": "public",
+    "value": true,
+    "options": {
+      "label": "Show value",
+      "description": "Option to disable percentage display"
+    }
+  },
+  "bars": {
+    "type": "paramsGroup",
+    "access": "public",
+    "value": {
+      "value": [
+        {
+          "title": "HTML",
+          "value": 90,
+          "backgroundColor": "#C45959"
+        },
+        {
+          "title": "CSS",
+          "value": 80,
+          "backgroundColor": "#C45959"
+        },
+        {
+          "title": "JavaScript",
+          "value": 75,
+          "backgroundColor": "#C45959"
+        }
+      ]
+    },
+    "options": {
+      "label": "General",
+      "title": "Chart bar",
+      "groupDefaultTile": "Chart bar",
+      "settings": {
+        "title": {
+          "type": "string",
+          "access": "public",
+          "value": "Chart bar",
+          "options": {
+            "label": "Title",
+            "dynamicField": true
+          }
+        },
+        "value": {
+          "type": "range",
+          "access": "public",
+          "value": "70",
+          "options": {
+            "label": "Value",
+            "cssMixin": {
+              "mixin": "barValue",
+              "property": "value",
+              "namePattern": "[\\da-f]+"
+            }
+          }
+        },
+        "backgroundColor": {
+          "type": "color",
+          "access": "public",
+          "value": "#C45959",
+          "options": {
+            "label": "Background color",
+            "cssMixin": {
+              "mixin": "barBackgroundColor",
+              "property": "backgroundColor",
+              "namePattern": "[\\da-f]+"
+            }
+          }
+        },
+        "_paramGroupEditFormTab1": {
+          "type": "group",
+          "access": "protected",
+          "value": [
+            "title",
+            "value",
+            "backgroundColor"
+          ],
+          "options": {
+            "label": "General"
+          }
+        },
+        "metaEditFormTabs": {
+          "type": "group",
+          "access": "protected",
+          "value": [
+            "_paramGroupEditFormTab1"
+          ]
+        }
+      }
+    }
+  },
+  "customClass": {
+    "type": "string",
+    "access": "public",
+    "value": "",
+    "options": {
+      "label": "Extra class name",
+      "description": "Add an extra class name to the element and refer to it from Custom CSS option."
+    }
+  },
+  "metaCustomId": {
+    "type": "customId",
+    "access": "public",
+    "value": "",
+    "options": {
+      "label": "Element ID",
+      "description": "Apply unique ID to element to link directly to it by using #your_id (for element ID use lowercase input only)."
+    }
+  },
+  "designOptions": {
+    "type": "designOptions",
+    "access": "public",
+    "value": {},
+    "options": {
+      "label": "Design Options"
+    }
+  },
+  "editFormTab1": {
+    "type": "group",
+    "access": "protected",
+    "value": [
+      "thickness",
+      "toggleValue",
+      "bars",
+      "metaCustomId",
+      "customClass"
+    ],
+    "options": {
+      "label": "General"
+    }
+  },
+  "metaEditFormTabs": {
+    "type": "group",
+    "access": "protected",
+    "value": [
+      "editFormTab1",
+      "designOptions"
+    ]
+  },
+  "sharedAssetsLibrary": {
+    "access": "protected",
+    "type": "string",
+    "value": {
+      "libraries": [
+        {
+          "libsNames": [
+            "waypoints",
+            "countUp"
+          ]
+        }
+      ]
+    }
+  },
+  "metaPublicJs": {
+    "access": "protected",
+    "type": "string",
+    "value": {
+      "libraries": [
+        {
+          "libPaths": "public/dist/countUpStarter.min.js"
+        }
+      ]
+    }
+  }
+}

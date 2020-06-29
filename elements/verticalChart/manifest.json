@@ -1,0 +1,19 @@
+{
+  "elements": {
+    "verticalChart": {
+      "settings": {
+        "name": "[Demo] Vertical Chart",
+        "metaThumbnailUrl": "[publicPath]/vertical-chart-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/vertical-chart-preview.png",
+        "metaDescription": "A chart that shows vertical columns with percentage values."
+      }
+    }
+  },
+  "categories": {
+    "Charts": {
+      "elements": [
+        "verticalChart"
+      ]
+    }
+  }
+}

@@ -1,0 +1,109 @@
+// Styles for Buttons
+//-----------------------------------------
+
+.vce-css-var-btn-container {
+  --background-color: #557cbf;
+  --text-align: left;
+  --border-radius: 0px;
+  --color: #fff;
+  --hover-color: #fff;
+  --hover-background-color: #4d70ac;
+  text-align: var(--text-align);
+}
+
+.vce-css-var-btn-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+
+  .vce-css-var-btn {
+    box-shadow: none;
+    &:hover, &:focus, &:link {
+      box-shadow: none;
+    }
+  }
+}
+
+.vce-css-var-btn-wrapper--stretched {
+  width: 100%;
+
+  .vce-css-var-btn {
+    width: 100%;
+  }
+}
+
+// By default .vce-button does not look like much. It will be a basic text with hover cursor
+.vce-css-var-btn {
+  a&,
+  button& {
+    background-color: var(--background-color);
+    background-image: none;
+    border: none; // For input.btn
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    color: var(--color);
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    // If the contnet of the button is more than the containers, the text will break normally
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    white-space: normal;
+    touch-action: manipulation;
+    user-select: none;
+    line-height: normal;
+    transition: all @vce-button-transition-duration @vce-button-transition-timing-function;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      outline: none;
+      color: var(--hover-color);
+    }
+
+    &:hover {
+      background-color: var(--hover-background-color);
+    }
+  }
+
+  button& {
+    -webkit-appearance: none;
+  }
+
+  // Basic solid button
+  &.vce-css-var-btn--size-small {
+    .vce-button-size(@vce-button-padding-vertical-small; @vce-button-padding-horizontal-small; @vce-button-font-size-small;);
+  }
+  &.vce-css-var-btn--size-medium {
+    .vce-button-size(@vce-button-padding-vertical-medium; @vce-button-padding-horizontal-medium; @vce-button-font-size-medium;);
+  }
+  &.vce-css-var-btn--size-large {
+    .vce-button-size(@vce-button-padding-vertical-large; @vce-button-padding-horizontal-large; @vce-button-font-size-large;);
+  }
+}
+
+// RTL support
+.rtl,
+[dir="rlt"] {
+  &.vce-css-var-btn,
+  .vce-css-var-btn {
+    direction: rtl;
+    unicode-bidi: embed;
+  }
+}
+
+// LTR
+.ltr,
+[dir="ltr"] {
+  &.vce-css-var-btn,
+  .vce-css-var-btn {
+    direction: ltr;
+    unicode-bidi: normal;
+  }
+}
+
+
+
