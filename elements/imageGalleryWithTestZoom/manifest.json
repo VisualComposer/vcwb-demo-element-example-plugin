@@ -2,9 +2,9 @@
   "elements": {
     "imageGalleryWithTestZoom": {
       "settings": {
-        "name": "Image Gallery With Test Zoom",
-        "metaThumbnailUrl": "[publicPath]/image-gallery-with-zoom-thumbnail.png",
-        "metaPreviewUrl": "[publicPath]/image-gallery-with-zoom-preview.png",
+        "name": "[Demo] Gallery",
+        "metaThumbnailUrl": "[publicPath]/image-gallery-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/image-gallery-preview.png",
         "metaDescription": "A grid type image gallery with a test zoom effect upon hover to catch visitors' attention."
       }
     }

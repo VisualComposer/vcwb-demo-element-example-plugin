@@ -20,7 +20,7 @@
     "watch": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.v4.config.js --progress --colors --watch"
   },
   "devDependencies": {
-    "vc-webpack-vendors": "2.2.0"
+    "vc-webpack-vendors": "2.5.3"
   },
   "babel": {
     "presets": [
@@ -56,7 +56,9 @@
     "less": "3.10.3"
   },
   "browserslist": [
-    "ie >= 11",
-    "last 2 version"
+    ">1%",
+    "ios_saf 8",
+    "ie 10",
+    "ie 11"
   ]
 }
