@@ -2,10 +2,10 @@
   "elements": {
     "logoSuperTest": {
       "settings": {
-        "name": "Logo Super Test",
-        "metaThumbnailUrl": "[publicPath]/logo-widget-thumbnail.png",
-        "metaPreviewUrl": "[publicPath]/logo-widget-preview.png",
-        "metaDescription": "Display you logo widget for test :)"
+        "name": "[Demo] Logo Element",
+        "metaThumbnailUrl": "[publicPath]/logo-element-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/logo-element-preview.png",
+        "metaDescription": "Widget to display your site logo"
       },
       "phpFiles": [
         "LogoSuperTestShortcodes.php"

@@ -11,6 +11,14 @@
  * https://github.com/lokesh/lightbox2/blob/master/LICENSE
  */
 
+// Script to initialize On Click actions in Visual Composer editor
+// and on View Page, this file is minified and located in the dist folder.
+// Minified version of this file is included in settings.json under metaPublicJs property.
+
+// To minify this file inside imageGalleryWithTestZoom/public folder a webpack.config.js file should be created
+// next inside terminal enter imageGalleryWithTestZoom/public folder and run:
+// ../../node_modules/.bin/webpack --config=webpack.config.js -p
+
 // Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
