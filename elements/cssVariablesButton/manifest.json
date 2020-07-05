@@ -1,0 +1,19 @@
+{
+  "elements": {
+    "cssVariablesButton": {
+      "settings": {
+        "name": "[Demo] CSS Variables Button",
+        "metaThumbnailUrl": "[publicPath]/css-variables-button-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/css-variables-button-preview.png",
+        "metaDescription": "Basic button made with the help of CSS Variables (Properties)"
+      }
+    }
+  },
+  "categories": {
+    "Button": {
+      "elements": [
+        "cssVariablesButton"
+      ]
+    }
+  }
+}

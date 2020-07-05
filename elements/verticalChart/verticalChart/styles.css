@@ -1,0 +1,78 @@
+.vce-bar-container {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px 35px 0;
+}
+
+.vce-bar-container:last-of-type {
+  margin-right: 0;
+}
+
+.vce-bar-wrapper {
+  position: relative;
+  background-color: #eee;
+  overflow: hidden;
+  height: 150px;
+  margin: 0 0 10px;
+}
+
+.vce-bar-wrapper::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 100%;
+}
+
+.vce-bar {
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* Get rid of default border in Firefox. */
+  border: none;
+  height: 20px;
+  visibility: hidden;
+}
+
+.vce-bar-text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.vce-bar-container .vce-bar-title,
+.vce-bar-container .vce-bar-value {
+  line-height: 1;
+  margin: 0 0 10px;
+}
+
+.vce-bar-container .vce-bar-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.vce-bar-value {
+  display: none;
+  flex-shrink: 0;
+}
+
+.vce-bar-container .vce-bar-value::before {
+  display: none;
+}
+
+.vce-vertical-chart-display-value .vce-bar-value {
+  display: inline-block;
+}
+
+@keyframes progress-animation {
+  100% {
+    width: 100%;
+  }
+}

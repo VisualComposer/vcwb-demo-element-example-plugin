@@ -1,0 +1,183 @@
+{
+  "tag": {
+    "access": "protected",
+    "type": "string",
+    "value": "imageSlider"
+  },
+  "relatedTo": {
+    "type": "group",
+    "access": "protected",
+    "value": [
+      "General"
+    ]
+  },
+  "images": {
+    "type": "attachimage",
+    "access": "public",
+    "value": [
+      "image-slide-1.png",
+      "image-slide-2.png",
+      "image-slide-3.png"
+    ],
+    "options": {
+      "label": "Images",
+      "multiple": true,
+      "onChange": {
+        "rules": {
+          "clickableOptions": {
+            "rule": "value",
+            "options": {
+              "value": "url"
+            }
+          }
+        },
+        "actions": [
+          {
+            "action": "attachImageUrls"
+          }
+        ]
+      },
+      "url": false,
+      "imageFilter": true
+    }
+  },
+  "autoplay": {
+    "type": "toggle",
+    "access": "public",
+    "value": true,
+    "options": {
+      "label": "Autoplay"
+    }
+  },
+  "autoplayDelay": {
+    "type": "number",
+    "access": "public",
+    "value": "3",
+    "options": {
+      "label": "Autoplay Delay in seconds",
+      "onChange": {
+        "rules": {
+          "autoplay": {
+            "rule": "toggle"
+          }
+        },
+        "actions": [
+          {
+            "action": "toggleVisibility"
+          }
+        ]
+      }
+    }
+  },
+  "effect": {
+    "type": "dropdown",
+    "access": "public",
+    "value": "slideIn",
+    "options": {
+      "label": "Slide effect",
+      "values": [
+        {
+          "label": "Slide In",
+          "value": "slideIn"
+        },
+        {
+          "label": "Fade",
+          "value": "fade"
+        }
+      ]
+    }
+  },
+  "pointers": {
+    "type": "toggle",
+    "access": "public",
+    "value": true,
+    "options": {
+      "label": "Show pointers"
+    }
+  },
+  "arrows": {
+    "type": "toggle",
+    "access": "public",
+    "value": false,
+    "options": {
+      "label": "Show arrows"
+    }
+  },
+  "designOptions": {
+    "type": "designOptions",
+    "access": "public",
+    "value": {},
+    "options": {
+      "label": "Design Options"
+    }
+  },
+  "editFormTab1": {
+    "type": "group",
+    "access": "protected",
+    "value": [
+      "images",
+      "autoplay",
+      "autoplayDelay",
+      "effect",
+      "pointers",
+      "arrows",
+      "metaCustomId",
+      "customClass"
+    ],
+    "options": {
+      "label": "General"
+    }
+  },
+  "metaEditFormTabs": {
+    "type": "group",
+    "access": "protected",
+    "value": [
+      "editFormTab1",
+      "designOptions"
+    ]
+  },
+  "customClass": {
+    "type": "string",
+    "access": "public",
+    "value": "",
+    "options": {
+      "label": "Extra class name",
+      "description": "Add an extra class name to the element and refer to it from Custom CSS option."
+    }
+  },
+  "metaCustomId": {
+    "type": "customId",
+    "access": "public",
+    "value": "",
+    "options": {
+      "label": "Element ID",
+      "description": "Apply unique ID to element to link directly to it by using #your_id (for element ID use lowercase input only)."
+    }
+  },
+  "sharedAssetsLibrary": {
+    "access": "protected",
+    "type": "string",
+    "value": {
+      "libraries": [
+        {
+          "libsNames": [
+            "slickSlider"
+          ]
+        }
+      ]
+    }
+  },
+  "metaPublicJs": {
+    "access": "protected",
+    "type": "string",
+    "value": {
+      "libraries": [
+        {
+          "libPaths": [
+            "public/dist/imageSlider.min.js"
+          ]
+        }
+      ]
+    }
+  }
+}

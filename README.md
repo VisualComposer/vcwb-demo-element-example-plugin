@@ -41,4 +41,13 @@ yarn install // Install all the element dependencies (must be same as visualcomp
 yarn build // Builds development build
 yarn watch // Watches & Builds development version on file modification
 yarn build-production // Builds the minified build
+
+lessc elementName/public/src/init.less elementName/styles.css // compile LESS source file to CSS output
+../../node_modules/.bin/webpack --config=webpack.config.js -p // minify JS file for public use inside elementName/public folder
 ```
+
+### Resources for Visual Composer API:
+- [API Documentation](https://visualcomposer.com/help/api/)
+- [Custom Element & Add-on Development](https://visualcomposer.com/blog/visual-composer-api-custom-elements-and-add-ons/)
+- [Theme Integration](https://visualcomposer.com/blog/visual-composer-theme-integration/)
+- [Staging Environment](https://visualcomposer.com/blog/visual-composer-on-staging/)

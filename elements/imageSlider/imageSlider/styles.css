@@ -1,0 +1,248 @@
+.vce-image-slider {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  direction: ltr;
+}
+
+.vce-image-slider-wrapper {
+  position: relative;
+  overflow: hidden;
+  color: transparent;
+  padding-top: 56.25%;
+  z-index: 0;
+}
+
+.vce-image-slider .vce-image-slider-list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+}
+
+.vce-image-slider .vce-image-slider-list *:focus {
+  outline: none;
+}
+
+.vce-image-slider-list .slick-list {
+  overflow: hidden;
+  height: 100%;
+}
+
+.vce-image-slider-list .slick-track,
+.vce-image-slider-list .slick-slide,
+.vce-image-slider-list .vce-image-slider-img {
+  /* position: absolute;
+  width: 100%; */
+  height: 100%;
+}
+
+.vce-image-slider-list .vce-image-slider-img {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.vce-image-slider-arrow {
+  display: block;
+  position: absolute;
+  z-index: 9;
+  top: 0;
+  bottom: 0;
+  width: 35px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s ease, visibility .3s ease;
+}
+
+.vce-image-slider-list:hover .vce-image-slider-arrow {
+  opacity: 1;
+  visibility: visible;
+}
+
+.vce-image-slider-arrow.vce-image-slider-prev-arrow {
+  left: 0;
+}
+
+.vce-image-slider-arrow.vce-image-slider-next-arrow {
+  right: 0;
+}
+
+.vce-image-slider-arrow svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.vce-image-slider-arrow svg polygon {
+  fill: rgba(255, 255, 255, .5);
+  transition: fill .3s ease;
+}
+
+.vce-image-slider-arrow svg:hover polygon {
+  fill: #fff;
+}
+
+.vce-image-slider-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 2;
+}
+
+.vce-image-slider-dots .slick-dots {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.vce-image-slider-dots .slick-dots li {
+  list-style: none;
+  display: inline-block;
+  padding: 7px;
+}
+
+.vce-image-slider-dots .slick-dots li:before,
+.vce-image-slider-dots .slick-dots li:after {
+  content: none;
+}
+
+.vce-image-slider-dots .slick-dots button {
+  background: #fff;
+  font-size: 0px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vce-image-slider-dots .slick-dots button:hover,
+.vce-image-slider-dots .slick-dots .slick-active button {
+  background: #fd9a00;
+}
+
+a.vce-image-slider-img {
+  border-bottom: 0;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+a.vce-image-slider-img:hover,
+a.vce-image-slider-img:focus {
+  text-decoration: none;
+  box-shadow: none;
+  border-bottom: 0;
+}
+
+.vce-image-slider .vce-image-slider-img img {
+  box-shadow: none;
+}
+
+  /* slick css */
+.vce-image-slider .slick-slider {
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.vce-image-slider .slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.vce-image-slider .slick-list:focus {
+  outline: none;
+}
+
+.vce-image-slider .slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.vce-image-slider .slick-slider .slick-track,
+.vce-image-slider .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.vce-image-slider .slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.vce-image-slider .slick-track:before,
+.vce-image-slider .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.vce-image-slider .slick-track:after {
+  clear: both;
+}
+
+.vce-image-slider .slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.vce-image-slider .slick-slide {
+  display: none;
+  float: left;
+  height: 100%;
+  min-height: 1px;
+}
+
+.vce-image-slider .slick-slide img {
+  display: block;
+}
+
+.vce-image-slider .slick-slide.slick-loading img {
+  display: none;
+}
+
+.vce-image-slider .slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.vce-image-slider .slick-initialized .slick-slide {
+  display: block;
+}
+
+.vce-image-slider .slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.vce-image-slider .slick-arrow.slick-hidden {
+  display: none;
+}

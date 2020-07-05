@@ -36,4 +36,4 @@ node_modules
 npm-debug.log
 yarn.lock
 elements/**/public/dist/runtime.bundle.js
-vendor.bundle.js
+elements/**/public/dist/vendor.bundle.js

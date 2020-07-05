@@ -2,10 +2,10 @@
   "elements": {
     "textTest": {
       "settings": {
-        "name": "Text Test",
-        "metaThumbnailUrl": "[publicPath]/thumbnail-text-block.png",
-        "metaPreviewUrl": "[publicPath]/preview-text-block.jpg",
-        "metaDescription": "Simple (TEST) text editor for working with static text, including paragraphs, titles, bullets and even media. Simple text block is a copy of default WordPress editor."
+        "name": "[Demo] Text Element",
+        "metaThumbnailUrl": "[publicPath]/text-element-thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/text-element-preview.png",
+        "metaDescription": "Simple text editor for working with static text, including paragraphs, titles, bullets and even media. Simple text block is a copy of default WordPress editor."
       }
     }
   },

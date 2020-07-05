@@ -1,0 +1,94 @@
+/* ----------------------------------------------
+ * Basic Button
+ * ---------------------------------------------- */
+.vce-css-var-btn-container {
+  --background-color: #557cbf;
+  --text-align: left;
+  --border-radius: 0px;
+  --color: #fff;
+  --hover-color: #fff;
+  --hover-background-color: #4d70ac;
+  text-align: var(--text-align);
+}
+.vce-css-var-btn-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+.vce-css-var-btn-wrapper .vce-css-var-btn {
+  box-shadow: none;
+}
+.vce-css-var-btn-wrapper .vce-css-var-btn:hover,
+.vce-css-var-btn-wrapper .vce-css-var-btn:focus,
+.vce-css-var-btn-wrapper .vce-css-var-btn:link {
+  box-shadow: none;
+}
+.vce-css-var-btn-wrapper--stretched {
+  width: 100%;
+}
+.vce-css-var-btn-wrapper--stretched .vce-css-var-btn {
+  width: 100%;
+}
+a.vce-css-var-btn,
+button.vce-css-var-btn {
+  background-color: var(--background-color);
+  background-image: none;
+  border: none;
+  border-radius: var(--border-radius);
+  box-sizing: border-box;
+  color: var(--color);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: normal;
+  touch-action: manipulation;
+  user-select: none;
+  line-height: normal;
+  transition: all 0.2s ease-in-out;
+}
+a.vce-css-var-btn:hover,
+button.vce-css-var-btn:hover,
+a.vce-css-var-btn:focus,
+button.vce-css-var-btn:focus {
+  text-decoration: none;
+  outline: none;
+  color: var(--hover-color);
+}
+a.vce-css-var-btn:hover,
+button.vce-css-var-btn:hover {
+  background-color: var(--hover-background-color);
+}
+button.vce-css-var-btn {
+  -webkit-appearance: none;
+}
+.vce-css-var-btn.vce-css-var-btn--size-small {
+  font-size: 11px;
+  padding: 10px 30px;
+}
+.vce-css-var-btn.vce-css-var-btn--size-medium {
+  font-size: 16px;
+  padding: 15px 43px;
+}
+.vce-css-var-btn.vce-css-var-btn--size-large {
+  font-size: 21px;
+  padding: 20px 56px;
+}
+.rtl.vce-css-var-btn,
+[dir="rlt"].vce-css-var-btn,
+.rtl .vce-css-var-btn,
+[dir="rlt"] .vce-css-var-btn {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+.ltr.vce-css-var-btn,
+[dir="ltr"].vce-css-var-btn,
+.ltr .vce-css-var-btn,
+[dir="ltr"] .vce-css-var-btn {
+  direction: ltr;
+  unicode-bidi: normal;
+}

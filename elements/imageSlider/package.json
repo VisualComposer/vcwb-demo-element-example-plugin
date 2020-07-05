@@ -1,17 +1,12 @@
 {
   "name": "vcwb",
-  "version": "1.0.0-dev",
-  "description": "Image Gallery with Test Zoom",
+  "version": "dev",
+  "license": "SEE LICENSE IN <https://visualcomposer.com/terms-of-use/>",
+  "description": "Visual Composer Website Builder",
   "main": "index.php",
   "repository": {
     "type": "git",
-    "url": "git@github.com:Visualcomposer/vcwb-demo-element-example-plugin.git"
-  },
-  "author": "@visualcomposer",
-  "license": "GPL-2.0+",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5.8"
+    "url": "git@github.com:Visualcomposer/builder.git"
   },
   "scripts": {
     "standard": "standard --version && standard",
@@ -56,7 +51,9 @@
     "less": "3.10.3"
   },
   "browserslist": [
-    "ie >= 11",
-    "last 2 version"
+    ">1%",
+    "ios_saf 8",
+    "ie 10",
+    "ie 11"
   ]
 }
