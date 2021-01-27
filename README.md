@@ -19,7 +19,7 @@ Directory {tag} (must be renamed to the element tag name):
 - cssMixins directory – cssMixin.pcss: POSTCSS file that holds mixin for custom generated style
 - public directory – may contain custom CSS, JS, and images for public view
 - index.js - the main file, build with webpack
-- component.js - ReactJS component contains Visual Compser editor component. NOTE: This component is used only in the editor, not the View Page
+- component.js - ReactJS component contains Visual Composer editor component. NOTE: This component is used only in the editor, not the View Page
 - settings.json - Describes element attributes
 - *.php files - Required PHP files(must be described in ../manifest.json)
 - editor.css - CSS file which will be used only in the editor
