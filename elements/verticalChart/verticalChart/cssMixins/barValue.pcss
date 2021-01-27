@@ -1,0 +1,17 @@
+.vce-bar--value-$selector {
+  .vce-bar-play-animation.vce-bar-wrapper::before {
+    height: $(value)%;
+    animation: vcv-fill-animation-$selector 1s ease-in-out forwards;
+  }
+}
+
+@keyframes vcv-fill-animation-$selector {
+  $step: resolve(100 / $value);
+  @for $count from 0 to $(value) by 1 {
+    $percentages: resolve($step * $count);
+
+    $(percentages)% {
+      height: $(count)%;
+    }
+  }
+}

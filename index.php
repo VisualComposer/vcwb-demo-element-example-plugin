@@ -23,6 +23,9 @@ add_action(
             'logoSuperTest',
             'textTest',
             'imageGalleryWithTestZoom',
+            'cssVariablesButton',
+            'imageSlider',
+            'verticalChart',
         ];
         $pluginBaseUrl = rtrim(plugins_url(basename(__DIR__)), '\\/');
         /** @var \VisualComposer\Modules\Elements\ApiController $elementsApi */
