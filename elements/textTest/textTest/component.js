@@ -7,8 +7,8 @@ export default class TextTestElement extends vcvAPI.elementComponent {
     const { id, atts, editor } = this.props
     const { output, customClass, metaCustomId } = atts // destructuring assignment for attributes from settings.json with access public
     let textBlockClasses = 'vce-text-test-block'
-    let wrapperClasses = 'vce-text-block-test-wrapper vce'
-    let customProps = {}
+    const wrapperClasses = 'vce-text-block-test-wrapper vce'
+    const customProps = {}
     if (typeof customClass === 'string' && customClass) {
       textBlockClasses = textBlockClasses.concat(' ' + customClass)
     }
@@ -19,10 +19,12 @@ export default class TextTestElement extends vcvAPI.elementComponent {
 
     const doAll = this.applyDO('all')
 
-    return <div className={textBlockClasses} {...editor} {...customProps}>
-      <div className={wrapperClasses} id={'el-' + id} {...doAll}>
-        {output}
+    return (
+      <div className={textBlockClasses} {...editor} {...customProps}>
+        <div className={wrapperClasses} id={'el-' + id} {...doAll}>
+          {output}
+        </div>
       </div>
-    </div>
+    )
   }
 }

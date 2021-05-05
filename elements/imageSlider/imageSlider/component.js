@@ -15,9 +15,9 @@ export default class ImageSlider extends vcvAPI.elementComponent {
     let { images, autoplay, autoplayDelay, effect, pointers, arrows, metaCustomId, customClass } = atts
 
     let containerClasses = 'vce-image-slider'
-    let wrapperClasses = 'vce-image-slider-wrapper vce'
-    let dotsClasses = 'vce-image-slider-dots'
-    let containerProps = {}
+    const wrapperClasses = 'vce-image-slider-wrapper vce'
+    const dotsClasses = 'vce-image-slider-dots'
+    const containerProps = {}
 
     if (typeof customClass === 'string' && customClass) {
       containerClasses += ` ${customClass}`
@@ -28,13 +28,13 @@ export default class ImageSlider extends vcvAPI.elementComponent {
     }
 
     // Generate array of JSX of images
-    let Slides = images.map((image, index) => {
-      let customProps = {}
-      let CustomTag = 'div'
+    const Slides = images.map((image, index) => {
+      const customProps = {}
+      const CustomTag = 'div'
       let imgClasses = 'vce-image-slider-img'
-      let imgTagClasses = ''
-      let imgSrc = this.getImageUrl(image) // This is the common method available for all elements
-      let itemProps = {}
+      const imgTagClasses = ''
+      const imgSrc = this.getImageUrl(image) // This is the common method available for all elements
+      const itemProps = {}
 
       customProps.style = { backgroundImage: `url(${imgSrc})` }
 
@@ -81,7 +81,8 @@ export default class ImageSlider extends vcvAPI.elementComponent {
     // Compose the markup of the slider
     // Store slick settings in the data attributes
     const listHTML = (
-      <div className='vce-image-slider-list'
+      <div
+        className='vce-image-slider-list'
         data-slick-autoplay={autoplay ? 'on' : 'off'}
         data-slick-autoplay-delay={`${autoplayDelay}`}
         data-slick-effect={effect}
@@ -108,7 +109,8 @@ export default class ImageSlider extends vcvAPI.elementComponent {
       <div className={containerClasses} {...editor} {...containerProps}>
         <div className={wrapperClasses} id={'el-' + id} {...doAll}>
           <div className='vcvhelper' data-vcvs-html={htmlString}>
-            <div className='vce-image-slider-list'
+            <div
+              className='vce-image-slider-list'
               data-slick-autoplay={autoplay ? 'on' : 'off'}
               data-slick-autoplay-delay={autoplayDelay}
               data-slick-effect={effect}
