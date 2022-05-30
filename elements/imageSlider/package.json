@@ -11,7 +11,7 @@
   "scripts": {
     "standard": "standard --version && standard",
     "build": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js",
-    "build-production": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.production.js -p",
+    "build-production": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.production.js",
     "watch": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js --watch"
   },
   "devDependencies": {
