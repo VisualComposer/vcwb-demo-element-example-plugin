@@ -20,7 +20,7 @@
     "watch": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js --watch"
   },
   "devDependencies": {
-    "vc-webpack-vendors": "3.0.5"
+    "vc-webpack-vendors": "3.1.1"
   },
   "babel": {
     "presets": [
