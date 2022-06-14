@@ -2,6 +2,20 @@
 
 This is a Demo (example) plugin for developers to showcase custom elements. It acts as a sandbox for developers. To see it in action download and install it on your WordPress instance along with the [Visual Composer Website Builder](https://github.com/VisualComposer/builder) plugin.
 
+### Requirements
+- node > 8.0, recommended latest
+- PHP > 5.4, recommended latest (7.2)
+
+## Installation
+- Clone this repository `git clone https://github.com/VisualComposer/vcwb-demo-element-example-plugin.git` to wp-content/plugins directory
+- Go to the plugin page in your wp admin area and activate the plugin
+- That's it. You can open the editor and find new plugin elements here.
+
+## Element update
+- Run `yarn install` in the element directory
+- Build via `yarn build` in the element directory
+- Once an element is built it will appear in the Visual Composer editor
+
 ## What is an element?
 An element is the independent part of the system which represents HTML based block with the ability to output media and dynamic content.
 
@@ -24,16 +38,6 @@ Directory {tag} (must be renamed to the element tag name):
 - *.php files - Required PHP files(must be described in ../manifest.json)
 - editor.css - CSS file which will be used only in the editor
 - style.css - CSS file which will be used on the frontend to display content
-
-### Requirements
-- node > 8.0, recommended latest
-- PHP > 5.4, recommended latest (7.2)
-
-## Installation
-- Clone this repository `git clone https://github.com/VisualComposer/vcwb-demo-element-example-plugin.git`
-- Run `yarn install` in the element directory
-- Build via `yarn build` in the element directory
-- Once an element is built it will appear in the Visual Composer editor
 
 ### Commands
 ```
