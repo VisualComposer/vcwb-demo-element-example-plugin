@@ -104,7 +104,9 @@
       "atts_excerpt",
       "atts_excerpt_length",
       "atts_pagination",
-      "filtersToggle"
+      "filtersToggle",
+      "metaCustomId",
+      "customClass"
     ],
     "options": {
       "label": "General"
@@ -229,19 +231,6 @@
       "label": "Design Options"
     }
   },
-  "advancedTab": {
-    "type": "group",
-    "access": "protected",
-    "value": [
-      "htmlAttributes",
-      "customAttributes",
-      "customCSS"
-    ],
-    "options": {
-      "label": "Advanced",
-      "isSections": true
-    }
-  },
   "metaEditFormTabs": {
     "type": "group",
     "access": "protected",
@@ -251,8 +240,7 @@
       "sourceItem",
       "pagination",
       "gridItem",
-      "designTab",
-      "advancedTab"
+      "designOptions"
     ]
   },
   "relatedTo": {
@@ -284,63 +272,5 @@
     "access": "protected",
     "type": "string",
     "value": "demoGrid"
-  },
-  "htmlAttributes": {
-    "type": "group",
-    "access": "public",
-    "value": [
-      "metaCustomId",
-      "customClass"
-    ],
-    "options": {
-      "label": "HTML Attributes"
-    }
-  },
-  "customCSS": {
-    "type": "group",
-    "access": "public",
-    "value": [
-      "styleEditor"
-    ],
-    "options": {
-      "label": "Custom CSS",
-      "tooltip": "Add custom CSS to the element using the [element-id] placeholder."
-    }
-  },
-  "styleEditor": {
-    "type": "styleEditor",
-    "access": "public",
-    "value": [],
-    "options": []
-  },
-  "customAttributes": {
-    "type": "group",
-    "access": "public",
-    "value": [
-      "extraDataAttributes"
-    ],
-    "options": {
-      "label": "Custom Attributes"
-    }
-  },
-  "extraDataAttributes": {
-    "type": "string",
-    "access": "public",
-    "value": "",
-    "options": {
-      "label": "Extra Data Attributes",
-      "description": "Add data attributes to your element (ex. data-name=john data-age=28)"
-    }
-  },
-  "designTab": {
-    "type": "group",
-    "access": "protected",
-    "options": {
-      "label": "Design",
-      "isSections": true
-    },
-    "value": [
-      "designOptions"
-    ]
   }
 }
