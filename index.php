@@ -26,6 +26,10 @@ add_action(
             'cssVariablesButton',
             'imageSlider',
             'verticalChart',
+            'wpbsTestimonials',
+            'wpbsImageSlider',
+            'demoGrid',
+            'demoGridItem',
         ];
         $pluginBaseUrl = rtrim(plugins_url(basename(__DIR__)), '\\/');
         /** @var \VisualComposer\Modules\Elements\ApiController $elementsApi */

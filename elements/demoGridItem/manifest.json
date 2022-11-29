@@ -1,0 +1,18 @@
+{
+  "elements": {
+    "demoGridItem": {
+      "settings": {
+        "name": "Post Description",
+        "metaDescription": ""
+      },
+      "phpFiles": []
+    }
+  },
+  "categories": {
+    "_postsGridItem": {
+      "elements": [
+        "demoGridItem"
+      ]
+    }
+  }
+}

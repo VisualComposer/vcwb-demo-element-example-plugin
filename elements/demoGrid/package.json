@@ -1,0 +1,59 @@
+{
+  "name": "vcwb",
+  "version": "dev",
+  "license": "SEE LICENSE IN <https://visualcomposer.com/terms-of-use/>",
+  "description": "Visual Composer Website Builder",
+  "main": "index.php",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Visualcomposer/builder.git"
+  },
+  "scripts": {
+    "standard": "standard --version && standard",
+    "build": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js",
+    "build-production": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.production.js",
+    "watch": "webpack --version && webpack --config=./node_modules/vc-webpack-vendors/webpack.config.js --watch"
+  },
+  "devDependencies": {
+    "vc-webpack-vendors": "3.3.3"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-transform-runtime",
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "public/dist/",
+      "tests/",
+      "**/public/js"
+    ],
+    "rules": {
+      "jsx-quotes": [
+        2,
+        "prefer-single"
+      ],
+      "import/no-webpack-loader-syntax": "off"
+    }
+  },
+  "resolutions": {
+    "core-js": "3.25.5",
+    "postcss": "8.4.18",
+    "css-loader": "6.7.1",
+    "color-name": "1.1.4",
+    "eslint": "8.25.0",
+    "less": "4.1.3",
+    "raw-loader": "1.0.0",
+    "@babel/runtime": "7.19.4"
+  },
+  "browserslist": [
+    "ie >= 11",
+    "last 2 version"
+  ]
+}

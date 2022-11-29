@@ -1,0 +1,29 @@
+{
+  "elements": {
+    "demoGrid": {
+      "settings": {
+        "name": "[Demo] Demo Grid",
+        "metaThumbnailUrl": "[publicPath]/thumbnail.png",
+        "metaPreviewUrl": "[publicPath]/preview.png",
+        "metaDescription": "Add page, post or custom post type grid teasers in grid layout."
+      }
+    }
+  },
+  "categories": {
+    "Grids": {
+      "elements": [
+        "demoGrid"
+      ]
+    }
+  },
+  "dependencies": [
+    "element/postsGrid",
+    "element/postGridFilter",
+    "element/postsGridDataSourcePage",
+    "element/postsGridDataSourceListOfIds",
+    "element/postsGridDataSourceCustomPostType",
+    "element/postsGridDataSourcePost",
+    "element/postsGridDataSourceArchive",
+    "element/demoGridItem"
+  ]
+}
