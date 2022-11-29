@@ -89,7 +89,7 @@ export default class DemoGrid extends vcvAPI.elementComponent {
 
   render () {
     const { id, atts, editor } = this.props
-    const { customClass, metaCustomId, gap, columns, atts_pagination_color: paginationColor, atts_pagination_active_color: paginationActiveColor, atts_pagination_text_color: paginationTextColor, atts_pagination_active_text_color: paginationActiveTextColor, extraDataAttributes } = atts
+    const { customClass, metaCustomId, gap, columns, atts_pagination_color: paginationColor, atts_pagination_active_color: paginationActiveColor, atts_pagination_text_color: paginationTextColor, atts_pagination_active_text_color: paginationActiveTextColor } = atts
     const gapPx = `${gap}px`
     const paginationHoverColor = this.getColorShade(-0.1, paginationColor)
     const paginationActiveHoverColor = this.getColorShade(-0.1, paginationActiveColor)
@@ -98,7 +98,7 @@ export default class DemoGrid extends vcvAPI.elementComponent {
     const wrapperClasses = 'vce vce-demo-grid-wrapper'
     const containerClasses = 'vce-demo-grid-container'
 
-    const customProps = this.getExtraDataAttributes(extraDataAttributes)
+    const customProps = {}
 
     if (customClass) {
       containerClasses += ` ${customClass}`
