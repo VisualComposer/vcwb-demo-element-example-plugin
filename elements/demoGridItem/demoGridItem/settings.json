@@ -42,13 +42,44 @@
       "description": "Apply zoom effect to featured images."
     }
   },
+  "aspectRatio": {
+    "type": "dropdown",
+    "access": "public",
+    "value": "16/9",
+    "options": {
+      "label": "Aspect ratio",
+      "values": [
+        {
+          "label": "1:1",
+          "value": "1/1"
+        },
+        {
+          "label": "16:9",
+          "value": "16/9"
+        },
+        {
+          "label": "9:16",
+          "value": "9/16"
+        },
+        {
+          "label": "4:3",
+          "value": "4/3"
+        },
+        {
+          "label": "3:4",
+          "value": "3/4"
+        }
+      ]
+    }
+  },
   "editFormTab1": {
     "type": "group",
     "access": "public",
     "value": [
       "padding",
       "background",
-      "animation"
+      "animation",
+      "aspectRatio"
     ],
     "options": {
       "label": "Post Description"

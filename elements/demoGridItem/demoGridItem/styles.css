@@ -1,6 +1,10 @@
 /* ----------------------------------------------
  * Post Description
  * ---------------------------------------------- */
+ .vce-demo-grid-wrapper .vce-post-description {
+  --aspect-ratio: 16/9;
+}
+
 .vce-post-description {
   box-sizing: border-box;
   border: none;
@@ -13,6 +17,52 @@
 
 .vce-post-description * {
   box-sizing: border-box;
+}
+
+/*
+aspect-ratio: var(--aspect-ratio);
+*/
+
+.featured-image {
+  background-color: orange;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+
+  aspect-ratio: var(--aspect-ratio);
+
+}
+
+/* Overlay */
+.featured-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.vce-post-description:hover .post-category,
+.vce-post-description:hover .post-title,
+.vce-post-description:hover .featured-image::before  {
+  opacity: 1;
+}
+
+.post-category,
+.post-title {
+  color: #fff;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .vce-post-description--background {
