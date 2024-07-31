@@ -96,7 +96,7 @@ export default class DemoGrid extends vcvAPI.elementComponent {
     const cssVars = { gapPx, columns, paginationColor, paginationActiveColor, paginationTextColor, paginationActiveTextColor, paginationHoverColor, paginationActiveHoverColor }
     const styleObj = setCssVariables(cssVars)
     const wrapperClasses = 'vce vce-demo-grid-wrapper'
-    const containerClasses = 'vce-demo-grid-container'
+    let containerClasses = 'vce-demo-grid-container'
 
     const customProps = {}
 
